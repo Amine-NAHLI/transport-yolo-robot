@@ -1,0 +1,11 @@
+names:
+- stop
+- vitesse_80
+- feux_rouge
+- feux_vert
+- feux_orange
+- bart_simpson
+nc: 6
+path: C:\1er CI\ROBOTIC\transport-yolo-robot\dataset_v2
+train: images/train
+val: images/train
