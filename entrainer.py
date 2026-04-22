@@ -1,17 +1,19 @@
 from ultralytics import YOLO
 
-print("Démarrage entraînement...")
+if __name__ == '__main__':
+    print("Démarrage entraînement GPU...")
 
-model = YOLO("yolov8n.pt")
+    model = YOLO("yolov8n.pt")
 
-model.train(
-    data    = r"C:\robot_project\dataset_final\data.yaml",
-    epochs  = 50,
-    imgsz   = 640,
-    batch   = 8,
-    name    = "robot_panneaux",
-    patience= 10,
-)
+    model.train(
+        data    = r"C:\1er CI\ROBOTIC\transport-yolo-robot\dataset_final\data.yaml",
+        epochs  = 50,
+        imgsz   = 640,
+        batch   = 16,
+        name    = "robot_panneaux",
+        device  = 0,
+        workers = 4,
+    )
 
-print("Entraînement terminé !")
-print("Modèle sauvegardé dans : runs/detect/robot_panneaux/weights/best.pt")
+    print("Entraînement terminé !")
+    print("Modèle : runs/detect/robot_panneaux/weights/best.pt")

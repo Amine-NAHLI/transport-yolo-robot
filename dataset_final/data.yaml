@@ -1,8 +1,8 @@
-names:
-- stop
-- vitesse_80
-- feux_rouge
-nc: 3
-path: C:\robot_project\dataset_final
+path: C:\1er CI\ROBOTIC\transport-yolo-robot\dataset_final
 train: images/train
 val: images/train
+nc: 3
+names:
+  - stop
+  - vitesse_80
+  - feux_rouge
