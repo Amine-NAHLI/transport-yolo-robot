@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['SS']
+
+roboflow:
+  workspace: amines-workspace-ojhl2
+  project: amines-workspace-ojhl2
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/amines-workspace-ojhl2/amines-workspace-ojhl2/dataset

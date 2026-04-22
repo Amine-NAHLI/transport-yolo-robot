@@ -1,0 +1,8 @@
+names:
+- stop
+- vitesse_80
+- feux_rouge
+nc: 3
+path: C:\robot_project\dataset_final
+train: images/train
+val: images/train

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['green traffic light', 'red traffic light', 'yellow traffic light']
+
+roboflow:
+  workspace: adnanes-workspace-ohuvu
+  project: adnanes-workspace-ohuvu
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/adnanes-workspace-ohuvu/adnanes-workspace-ohuvu/dataset
